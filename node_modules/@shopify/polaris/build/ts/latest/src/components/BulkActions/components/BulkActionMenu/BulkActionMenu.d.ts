@@ -1,0 +1,7 @@
+/// <reference types="react" />
+import type { MenuGroupDescriptor } from '../../../../types';
+export interface BulkActionsMenuProps extends MenuGroupDescriptor {
+    isNewBadgeInBadgeActions: boolean;
+}
+export declare function BulkActionMenu({ title, actions, isNewBadgeInBadgeActions, }: BulkActionsMenuProps): JSX.Element;
+//# sourceMappingURL=BulkActionMenu.d.ts.map

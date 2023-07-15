@@ -1,0 +1,61 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var React = require('react');
+var css = require('../../../../utilities/css.js');
+var components = require('../../../../utilities/components.js');
+var FormLayout = require('../../FormLayout.scss.js');
+var Item = require('../Item/Item.js');
+var hooks = require('../../../../utilities/unique-id/hooks.js');
+var Box = require('../../../Box/Box.js');
+
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+
+function Group({
+  children,
+  condensed,
+  title,
+  helpText
+}) {
+  const className = css.classNames(condensed ? FormLayout["default"].condensed : FormLayout["default"].grouped);
+  const id = hooks.useUniqueId('FormLayoutGroup');
+  let helpTextElement = null;
+  let helpTextID;
+  let titleElement = null;
+  let titleID;
+
+  if (helpText) {
+    helpTextID = `${id}HelpText`;
+    helpTextElement = /*#__PURE__*/React__default["default"].createElement(Box.Box, {
+      id: helpTextID,
+      paddingBlockStart: "2",
+      paddingInlineStart: "5",
+      paddingBlockEnd: "0",
+      paddingInlineEnd: "5",
+      color: "text-subdued"
+    }, helpText);
+  }
+
+  if (title) {
+    titleID = `${id}Title`;
+    titleElement = /*#__PURE__*/React__default["default"].createElement("div", {
+      id: titleID,
+      className: FormLayout["default"].Title
+    }, title);
+  }
+
+  const itemsMarkup = React.Children.map(children, child => components.wrapWithComponent(child, Item.Item, {}));
+  return /*#__PURE__*/React__default["default"].createElement("div", {
+    role: "group",
+    className: className,
+    "aria-labelledby": titleID,
+    "aria-describedby": helpTextID
+  }, titleElement, /*#__PURE__*/React__default["default"].createElement("div", {
+    className: FormLayout["default"].Items
+  }, itemsMarkup), helpTextElement);
+}
+
+exports.Group = Group;

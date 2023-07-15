@@ -1,0 +1,17 @@
+.Polaris-DisplayText_1u0t8 { margin: 0; }
+
+.Polaris-DisplayText--sizeSmall_7647q { font-size: var(--p-font-size-200); font-weight: var(--p-font-weight-regular); line-height: var(--p-font-line-height-3); }
+
+@media (min-width: 48em) { .Polaris-DisplayText--sizeSmall_7647q { font-size: var(--p-font-size-300); line-height: var(--p-font-line-height-4); } }
+
+.Polaris-DisplayText--sizeMedium_5f35p { font-size: 1.3125rem; font-weight: var(--p-font-weight-regular); line-height: var(--p-font-line-height-4); }
+
+@media (min-width: 48em) { .Polaris-DisplayText--sizeMedium_5f35p { font-size: 1.625rem; line-height: var(--p-font-line-height-5); } }
+
+.Polaris-DisplayText--sizeLarge_61dxo { font-size: var(--p-font-size-400); font-weight: var(--p-font-weight-semibold); line-height: var(--p-font-line-height-4); }
+
+@media (min-width: 48em) { .Polaris-DisplayText--sizeLarge_61dxo { font-size: var(--p-font-size-500); line-height: var(--p-font-line-height-5); } }
+
+.Polaris-DisplayText--sizeExtraLarge_1akox { font-size: 1.6875rem; font-weight: var(--p-font-weight-semibold); line-height: 2.25rem; }
+
+@media (min-width: 48em) { .Polaris-DisplayText--sizeExtraLarge_1akox { font-size: 2.625rem; line-height: 2.75rem; } }

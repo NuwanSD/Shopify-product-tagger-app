@@ -1,0 +1,32 @@
+/// <reference types="react" />
+declare type Size = 'small' | 'medium' | 'large';
+declare type Color = 'highlight' | 'primary' | 'success' | 'critical';
+export interface ProgressBarProps {
+    /**
+     * The progression of certain tasks
+     * @default 0
+     */
+    progress?: number;
+    /**
+     * Size of progressbar
+     * @default 'medium'
+     */
+    size?: Size;
+    /**
+     * Color of progressbar
+     * @default 'highlight'
+     */
+    color?: Color;
+    /**
+     * Whether the fill animation is triggered
+     * @default 'true'
+     */
+    animated?: boolean;
+    /**
+     * Id (ids) of element (elements) that describes progressbar
+     */
+    ariaLabelledBy?: string;
+}
+export declare function ProgressBar({ progress, size, color, animated: hasAppearAnimation, ariaLabelledBy, }: ProgressBarProps): JSX.Element;
+export {};
+//# sourceMappingURL=ProgressBar.d.ts.map

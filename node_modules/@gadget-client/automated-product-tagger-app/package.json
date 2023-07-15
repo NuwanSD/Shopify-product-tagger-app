@@ -1,0 +1,35 @@
+{
+  "name": "@gadget-client/automated-product-tagger-app",
+  "version": "1.85.0",
+  "files": [
+    "dist-*/",
+    "types",
+    "bin/"
+  ],
+  "source": "src/index.ts",
+  "types": "types/index.d.ts",
+  "main": "dist-cjs/index.js",
+  "module": "dist-esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist-esm/index.js",
+      "require": "./dist-cjs/index.js"
+    }
+  },
+  "private": true,
+  "dependencies": {
+    "@gadgetinc/api-client-core": "0.14.0"
+  },
+  "devDependencies": {
+    "typescript": "4.5.5",
+    "@types/node": "^16.11.7"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "gadget": {
+    "applicationName": "Automated Product Tagger App",
+    "environmentName": "Development",
+    "environmentVersion": "85"
+  }
+}

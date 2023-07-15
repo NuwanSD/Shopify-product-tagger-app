@@ -1,0 +1,18 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var styles = {
+  "Badge": "Polaris-Badge",
+  "statusSuccess": "Polaris-Badge--statusSuccess",
+  "statusInfo": "Polaris-Badge--statusInfo",
+  "statusAttention": "Polaris-Badge--statusAttention",
+  "statusWarning": "Polaris-Badge--statusWarning",
+  "statusCritical": "Polaris-Badge--statusCritical",
+  "statusNew": "Polaris-Badge--statusNew",
+  "withinFilter": "Polaris-Badge--withinFilter",
+  "Icon": "Polaris-Badge__Icon",
+  "PipContainer": "Polaris-Badge__PipContainer"
+};
+
+exports["default"] = styles;
